@@ -1,12 +1,24 @@
+
 html,
 body{
 	margin:  0px;
+	padding: 0px;
 	height: 100%;
  	font-size: 14px;
-}header{
+ 	top: 0;
+
+}
+header{
+	position: absolute;
+	top: 0;
+	height: 69px;
+	width: 100%;
 	background-color: #f1f1f1;
 	border-bottom:  1px solid #e5e5e5;
-	height: 69px;
+}
+aside{
+	position: absolute;
+	top: 69px;
 }
 .logo{
 	display: inline-block;
@@ -14,22 +26,28 @@ body{
 	height: 60px;
  	width: 150px;
  	margin: 3px 20px;
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
 	line-height: 60px;
 }
 .email-search{
-	float: left;
+	position: absolute;
+	top: 0;
+	left:190px;
 	width: 504px;
 	height:  28px;
 	margin-top:  19.5px;
 	margin-bottom: 19.5px;
 }
 #email-name{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 450px;
 	height: 24px;
 	margin: 0;
 	padding:0;
-	float: left;
 }
 .search{
 	display: inline-block;
@@ -43,10 +61,14 @@ body{
  	outline: none;
 	vertical-align: middle;
 	padding: 0;
-	float: left;
+	position: absolute;
+	left: 450px;
+	top: 0;
 }
 .application{
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 12%;
 	height: 20px;
 	width: 20px;
 	line-height: 20px;
@@ -56,7 +78,9 @@ body{
 	background-position: 1px 1px;
 }
 .accout-setting{
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 10px;
 	width: 10%;
 	font-size: 12px;
 	margin: 25.5px 10px 25.5px 0;
@@ -65,7 +89,8 @@ body{
 	text-overflow:ellipsis;
 }
 aside{
-	float:left;
+	position: absolute;
+	left: 0;
 	width: 200px;
 	height: 92%;
 }
@@ -83,14 +108,6 @@ nav ul a:visited{
 	padding-right: 130px;
 	font-size: 20px;
 	color: #d74a38;
-}
-.arrow-down{
-	background: url('arrow_down.png') no-repeat;
-	height: 7px;
- 	width: 8px;
- 	margin: 0;
- 	padding: 0;
- 	float: left;
 }
 ul{
 	list-style: none;
@@ -136,8 +153,11 @@ ul{
 }
 section{
 	width:auto;
+	position: absolute;
+	right: 0;
+	left: 200px;
+	top: 69px;
 	height: 92%;
-	margin-left :200px;
 }
 .email-list-top{
 	
@@ -147,7 +167,10 @@ section{
 	border-bottom: 1px solid #e5e5e5;
 }
 .email-list-top-left{
-	float: left;
+	position: absolute;
+	margin: 6px 0;
+	top: 0;
+	left: 0;
 	width: auto;
 }
 .check-dropdown,
@@ -157,7 +180,9 @@ section{
 	border-radius:4px;
 }
 .check-dropdown{
-	float: left;
+	position:absolute;
+	top: 0;
+	left: 0;
 	border: 1px solid #c6c6c6;
 	height: 30px;
 	width: 70;
@@ -168,7 +193,9 @@ section{
 	background-color: #f2f2f2;
 }
 .refresh{
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 69px;
 	border: 1px solid #c6c6c6;
 	height: 30px;
 	width: 70px;
@@ -180,7 +207,9 @@ section{
 	background-position:  27px 7px;
 }
 .additional{
-	float: left;
+	position: absolute;
+	top:0;
+	left: 163px;
 	border: 1px solid #c6c6c6;
 	height: 30px;
 	width: 90px;
@@ -190,11 +219,16 @@ section{
 	background-color: #f2f2f2;
 }
 .email-list-top-right{
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: auto;
+	margin: 6px 0;
 }
 .email-count{
-	float: left;
+	position: absolute;
+	top: 0;
+	right: 190px;
 	height: 30px;
 	width: 110px;
 	margin-right: 5px;
@@ -203,7 +237,9 @@ section{
 	text-align: center;
 }
 .prev-page{
-	float: left;
+	position: absolute;
+	top: 0;
+	right: 138px;
 	border: 1px solid #c6c6c6;
 	height: 30px;
 	width: 45px;
@@ -219,7 +255,9 @@ section{
 
 }
 .next-page{
-	float: left;
+	position: absolute;
+	top: 0;
+	right: 87px;
 	border: 1px solid #c6c6c6;
 	height: 30px;
 	width: 45px;
@@ -234,7 +272,9 @@ section{
 	font-weight: bold;
 }
 .setting{
-	float: left;
+	position: absolute;
+	top: 0;
+	right: 0;
 	border: 1px solid #c6c6c6;
 	height: 30px;
 	width: 70px;
@@ -250,7 +290,24 @@ article{
 	max-height: 460px;
 	margin-bottom: 10px;
 }
-.email-wrapper{
+.email-wrapper1,
+.email-wrapper2,
+.email-wrapper3,
+.email-wrapper4,
+.email-wrapper5,
+.email-wrapper6,
+.email-wrapper7,
+.email-wrapper8,
+.email-wrapper9,
+.email-wrapper10,
+.email-wrapper11,
+.email-wrapper12,
+.email-wrapper13,
+.email-wrapper14,
+.email-wrapper15{
+	position: relative;
+	top: 45;
+	right: 0;
 	display: block;
 	height: 4%;
 	width: 99%;
@@ -258,48 +315,66 @@ article{
 	min-width: 700px;
 	background-color: #f3f3f3;
 	border-bottom:1px solid #e5e5e5;
+	padding: 0;
+	margin: 0;
 }
 .email-checkbox{
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 5px;
 	height: 100%;
 	line-height: 200%;
 	margin: 0 0 0 10px;
 }
 
 .email-star{
-	float: left;
+	position: relative;
+	top: 0;
+	left: 40px;
 	height: 100%;
 	width: 5%;
 	line-height: 200%;
 	text-align: center;
 	color: #c2c2c2;
 }
-.email-name{
-	float: left;
+.email-name,
+.email-name1{
+	position: relative;
+	top: 0;
+	left: 50px;
 	height: 100%;
 	width: 180px;
 	text-align: left;
 	line-height: 200%
 }
 .email-body{
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 250px;
 	height: 100%;
 	width: 50%;
 	line-height: 200%;
 }
 .email-subject{
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;	
 }
 .email-contents{
-	float: left;
+	position: relative;
+	top: 0;
+	left: 230px;
+	right: 0px;
 	color: #8a778a; 
-	width: 35%;
+	width: 10px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow:ellipsis;
 }
 .email-file{
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 60px;
 	height: 95%;
 	width: 3%;
 	line-height: 200%;
@@ -309,7 +384,9 @@ article{
 	background-position:  2px 6px;
 }
 .email-time{
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 5px;
 	height: 100%;
 	width: 5%;
 	padding-right: 13px;
@@ -318,7 +395,8 @@ article{
 }
 
 footer{
-	float: left;
+	position: relative;
+	bottom: 0;
 	height: 4%;
 	width:100%;
 	font-size: 12px;
@@ -327,7 +405,9 @@ footer a:visited{
 	color:gray;
 }
 .footer-left{
-	float: left;
+	position: absolute;
+	top: 0;
+	left:  0;
 	text-align: left;
 	width: 25%;
 }
@@ -335,13 +415,18 @@ footer a:visited{
 	font-weight: bold;
 }
 .footer-center{
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 25%;
+	right: 23%;
 	text-align: center;
 	width: 40%;
 	margin: 0 5%;
 }
 .footer-right{
-	float: left;
+	position: absolute;
+	top: 0;
+	right:  0;
 	text-align: right;
 	width: 23%;
 	margin-right: 5px;
