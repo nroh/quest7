@@ -4,8 +4,9 @@ body{
 	margin:  0px;
 	padding: 0px;
 	height: 100%;
- 	font-size: 14px;
- 	top: 0;
+	font-size: 14px;
+	top: 0;
+
 
 }
 header{
@@ -24,8 +25,8 @@ aside{
 	display: inline-block;
 	background: url('logo.png') no-repeat;
 	height: 60px;
- 	width: 150px;
- 	margin: 3px 20px;
+	width: 150px;
+	margin: 3px 20px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -57,8 +58,8 @@ aside{
 	background-position: 18px 7px;
 	height:28px;
 	width:50px;
- 	border: 0px solid #4486fa;
- 	outline: none;
+	border: 0px solid #4486fa;
+	outline: none;
 	vertical-align: middle;
 	padding: 0;
 	position: absolute;
@@ -290,21 +291,25 @@ article{
 	max-height: 460px;
 	margin-bottom: 10px;
 }
-.email-wrapper1,
-.email-wrapper2,
-.email-wrapper3,
-.email-wrapper4,
-.email-wrapper5,
-.email-wrapper6,
-.email-wrapper7,
-.email-wrapper8,
-.email-wrapper9,
-.email-wrapper10,
-.email-wrapper11,
-.email-wrapper12,
-.email-wrapper13,
-.email-wrapper14,
-.email-wrapper15{
+section ul{
+	margin: 0;
+	padding: 0;
+}
+#email-wrapper1,
+#email-wrapper2,
+#email-wrapper3,
+#email-wrapper4,
+#email-wrapper5,
+#email-wrapper6,
+#email-wrapper7,
+#email-wrapper8,
+#email-wrapper9,
+#email-wrapper10,
+#email-wrapper11,
+#email-wrapper12,
+#email-wrapper13,
+#email-wrapper14,
+#email-wrapper15{
 	position: relative;
 	top: 45;
 	right: 0;
@@ -359,6 +364,11 @@ article{
 	position: absolute;
 	top: 0;
 	left: 0;	
+
+	width: 250px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
 }
 .email-contents{
 	position: relative;
